@@ -21,14 +21,23 @@
   <div class="layout">
 
     <header class="header">
-      <img src="./images/logo.svg" class="header__img" alt="logo" />
-      <h1 class="header__title">We are launching soon!</h1>
+      <div class="header__container-img">
+        <a href="#" class="header__logo-link">
+          <img src="./images/logo.svg" class="header__img" alt="logo" />
+        </a>        
+      </div>      
+      <h1 class="header__title">We are launching <span>soon!</span></h1>
       <p class="header__description">Subscribe and get notified</p>
 
       <form class="form">
-        <input type="email" class="form__input" name="email" id="email" placeholder="Your email address" required/>
+        <div class="form__group">
+          <input type="email" class="form__input" name="email" id="email" placeholder="Your email address..." autocomplete="off" required/>          
+          <p class="form__error"></p>
+        </div>
         <input type="submit" class="form__btn" value="Notify Me"/>
+                
       </form> 
+      
     </header>
 
     <main class="main">
